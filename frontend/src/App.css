@@ -55,7 +55,7 @@ html,
   bottom: -2px;
   width: 0%;
   height: 2px;
-  background-color: rgb(161, 0, 0);
+  background-color: #2e4f4f;
   transition: width 0.3s ease;
 }
 

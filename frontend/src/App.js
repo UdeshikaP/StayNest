@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './component/Header';
 import HeroSection from './component/HeroSection';
-import BookingForm from './component/BookingForm';
 import Home from './pages/Home/home';
 import AboutUs from './pages/About/aboutUs';
 import ContactUs from './pages/Contact/contact';
@@ -20,7 +19,6 @@ function App() {
     <div className="App">
       <Header />
       <HeroSection />
-      {/* <BookingForm /> */}
       <Routes>
           <Route path="/" element={<Home />} /> 
           <Route path="/about-us" element={<AboutUs/>}/>
