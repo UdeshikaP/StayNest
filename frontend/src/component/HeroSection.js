@@ -1,12 +1,13 @@
 import { Ribbon } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function HeroSection() {
     const location = useLocation();
-    const isLoginPage = location.pathname === "/login";
+    const hiddenPaths = ["/login", "/about-us","/room-details"]; 
+    const isHidden = hiddenPaths.includes(location.pathname); 
     return (
         <>
-            {!isLoginPage && (
+            {!isHidden && (
 
                 <div className="hero">
 
