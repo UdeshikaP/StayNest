@@ -24,7 +24,7 @@ const ContactUs = () => {
         <div className="map">
           <iframe
             title="hotel-location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019610612538!2d-122.41941518468128!3d37.77492977975961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c36cb5ab%3A0x7d8f3964c245f3a9!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1609998467120!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126605.78838105532!2d80.271827!3d7.486308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2a4ef4c640dbd%3A0xb6195edb5f2ffe15!2sKurunegala!5e0!3m2!1sen!2slk!4v1714143980181!5m2!1sen!2slk"
             width="100%"
             height="100%"
             allowFullScreen=""
