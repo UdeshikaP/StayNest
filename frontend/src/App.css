@@ -14,7 +14,7 @@ html,
   top: 0;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 5px;
   color: rgb(17, 17, 17);
   align-items: center;
   z-index: 10;
