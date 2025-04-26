@@ -1,26 +1,26 @@
 .about-container {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 70px 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     background-color: #fdfdfd;
   }
   
-  .hero {
+  .hero-img{
     text-align: center;
     margin-bottom: 50px;
+    height: 500px;
     animation: fadeIn 1s ease-in-out;
+    background: url('../../images/dining-service2.jpg') center center/cover no-repeat;
+   
+
   }
-  
-  .hero h1 {
-    font-size: 2.8rem;
-    color: #2e3a59;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    color: #6a7b98;
+
+  .hero-img h1 {
+    padding-top: 390px;
+    font-size: 3rem;
+    color: #fbfbfb;
   }
   
   .section {
@@ -39,24 +39,7 @@
     line-height: 1.6;
   }
   
-  .offer-list {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.05rem;
-  }
-  
-  .offer-list li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 1.5em;
-  }
-  
-  .offer-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: #4caf50;
-  }
+
   
   @keyframes fadeIn {
     from { opacity: 0; }
@@ -78,3 +61,97 @@
     }
   }
   
+  .two-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.offer-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.offer-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.offer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offer-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.offer-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.offer-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.offer-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.offer-card:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
