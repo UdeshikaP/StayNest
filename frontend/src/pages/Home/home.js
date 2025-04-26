@@ -5,13 +5,14 @@ import Rooms from "../../../../frontend/src/images/rooms.jpg"
 import Menu from "../../../../frontend/src/images/dining-service.jpg"
 import Pool from "../../../../frontend/src/images/pool-service.jpg"
 import Wellness from "../../../../frontend/src/images/wellness.jpg"
-
-
+import RoomsService from "../../../../frontend/src/images/room.png"
+import customerService from "../../../../frontend/src/images/customer.png"
+import parkingService from "../../../../frontend/src/images/parking.png"
 
 const Home = () => {
   return (
     <>
-      <div className="services">
+      <div className="services" id="#services">
         <div className="service-item">
           <div className="icon-circle">
             <Wifi size={40} color="black" />
@@ -20,16 +21,22 @@ const Home = () => {
           <p>Free Wifi</p>
         </div>
         <div className="service-item">
-          <div className="icon-circle"></div>
-          <img src={Rooms || "/placeholder.svg"} alt="Delicious food" />
+          <div className="icon-circle">
+          <img src={RoomsService || "/placeholder.svg"} alt="Delicious food" />
+
+          </div>
           <p>Room Service</p>
         </div>
         <div className="service-item">
-          <div className="icon-circle"></div>
+          <div className="icon-circle">          
+            <img src={parkingService || "/placeholder.svg"} alt="Delicious food" />
+          </div>
           <p>Free Parking</p>
         </div>
         <div className="service-item">
-          <div className="icon-circle"></div>
+          <div className="icon-circle">          
+            <img src={ customerService|| "/placeholder.svg"} alt="Delicious food" />
+          </div>
           <p>Customer Support</p>
         </div>
       </div>
