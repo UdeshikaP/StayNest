@@ -1,0 +1,98 @@
+.rooms-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #2e3a59;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #6a7b98;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+  }
+  
+  .room-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .room-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .room-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  }
+  
+  .room-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .room-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .room-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #2e4f4f;
+    margin-bottom: 10px;
+  }
+  
+  .features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .features li {
+    margin-bottom: 5px;
+  }
+  
+  .book-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e4f4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .book-btn:hover {
+    background-color: #2e4f4f;
+  }
+  
+  @media (max-width: 768px) {
+    .room-card {
+      width: 100%;
+    }
+  }
+  

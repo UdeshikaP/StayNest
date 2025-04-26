@@ -1,0 +1,206 @@
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+   overflow-x: hidden;
+
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  color: rgb(17, 17, 17);
+  align-items: center;
+  z-index: 10;
+  background: transparent;
+   background-color: white; /* Optional: so it doesn’t look transparent */
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: white;
+}
+
+.header-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-links li {
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+ }
+
+.header-links li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(161, 0, 0);
+  transition: width 0.3s ease;
+}
+
+.header-links li:hover::after,
+.header-links li.active::after {
+  width: 100%;
+}
+.header-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  position: relative;
+  background: url('../../frontend/src/images/banner-home.jpg') center center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* You can change to another font if you prefer */
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  margin: 0;
+}
+
+/* Optional: Responsive size */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+
+.scroll-icon {
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+  z-index: 2;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 100px;
+}
+
+.login,
+.signup {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.login {
+  background-color: transparent;
+  color: #2e4f4f; /* deep forest green */
+  border: 1px solid #2e4f4f; /* soft beige/gold */
+}
+
+.login:hover {
+  background-color: #2e4f4f;
+  color: #ffffff;
+}
+
+.signup {
+  background-color: #2e4f4f;
+  color: white;
+}
+
+.signup:hover {
+  background-color: #243d3d;
+}
+
+
+/* ✅ Responsive Styling */
+@media (max-width: 768px) {
+  .buttons {
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+
+  .login,
+  .signup {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .login,
+  .signup {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+

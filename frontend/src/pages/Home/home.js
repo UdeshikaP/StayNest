@@ -1,0 +1,106 @@
+import React from 'react';
+import './home.css';
+import { Wifi } from 'lucide-react';
+import Rooms from "../../../../frontend/src/images/rooms.jpg"
+
+
+
+const Home = () => {
+    return (
+        <>
+            <div class="booking-container">
+                <section class="booking-section" id="booking">
+                    <div className="image-container">
+
+                    </div>
+                    <div class="form-container">
+                        <h2>Book Your Stay</h2>
+                        <form>
+                            <div class="form-group">
+                                <label htmlFor="checkin">Check-in Date</label>
+                                <input type="date" id="checkin" name="checkin" />
+                            </div>
+                            <div class="form-group">
+                                <label htmlFor="checkout">Check-out Date</label>
+                                <input type="date" id="checkout" name="checkout" />
+                            </div>
+                            <div class="form-group">
+                                <label htmlFor="guests">Number of Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" />
+                            </div>
+                            <button type="submit" class="check-availability">
+                                Check Availability
+                            </button>
+                        </form>
+
+                    </div>
+
+                </section>
+            </div>
+
+
+
+            <div className="services">
+                <div className="service-item">
+                    <div className="icon-circle">        
+                        <Wifi size={40} color="black" />
+                    </div>
+
+                    <p>Free Wifi</p>
+                </div>
+                <div className="service-item">
+                    <div className="icon-circle"></div>
+                    <p>Room Service</p>
+                </div>
+                <div className="service-item">
+                    <div className="icon-circle"></div>
+                    <p>Free Parking</p>
+                </div>
+                <div className="service-item">
+                    <div className="icon-circle"></div>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+
+            {/* About Section */}
+      <section className="about">
+        <h2>About Us</h2>
+        <p>
+          Located in the heart of nature, Paradise Hotel is your perfect getaway for relaxation and indulgence. 
+          With world-class facilities, breathtaking views, and warm hospitality, we redefine luxury living.
+        </p>
+      </section>
+
+      {/* Features Section */}
+      <section className="features">
+        <h2>Why Choose Us</h2>
+        <div className="features-grid">
+          <div className="feature-box">
+            <div className="img-service">
+                        <img src={Rooms || "/placeholder.svg"} alt="Delicious food" />
+                      </div>
+            <h3>Luxury Rooms</h3>
+            <p>Elegantly designed rooms with scenic views and top-class amenities.</p>
+          </div>
+          <div className="feature-box">
+            <img src="https://source.unsplash.com/100x100/?spa" alt="Spa & Wellness" />
+            <h3>Spa & Wellness</h3>
+            <p>Rejuvenate your senses with our relaxing spa treatments.</p>
+          </div>
+          <div className="feature-box">
+            <img src="https://source.unsplash.com/100x100/?restaurant" alt="Fine Dining" />
+            <h3>Fine Dining</h3>
+            <p>Savor gourmet meals prepared by award-winning chefs.</p>
+          </div>
+          <div className="feature-box">
+            <img src="https://source.unsplash.com/100x100/?swimming-pool" alt="Infinity Pool" />
+            <h3>Infinity Pool</h3>
+            <p>Swim under the stars in our stunning infinity-edge pool.</p>
+          </div>
+        </div>
+      </section>
+        </>
+    );
+};
+
+export default Home;
