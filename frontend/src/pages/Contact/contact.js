@@ -1,22 +1,62 @@
+import { useState } from "react";
 import React from 'react';
 import './contact.css';
+import axios from "axios";
 
 const ContactUs = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log("Contact Form Data:", formData);
+    try {
+      const res = await axios.post("http://localhost:5003/contact/", formData); // <-- Correct URL
+      console.log(res.data);
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" }); // clear form after sending
+    } catch (error) {
+      console.error(error.response?.data || error.message);
+      alert("Failed to send message.");
+    }
+  };
   return (
     <div className="contact-container">
       <h1>Contact Us</h1>
       <p className="intro">We'd love to hear from you! Reach out with any questions, feedback, or bookings.</p>
 
       <div className="contact-content">
-        <form className="contact-form">
+        <form className="contact-form" onSubmit={handleSubmit}>
           <label htmlFor="name">Your Name</label>
-          <input type="text" id="name" placeholder="Enter your name" />
+          <input
+            type="name"
+            name="name"
+            placeholder="Enter your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
 
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" />
-
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
           <label htmlFor="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Your message here..."></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message here..."
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
 
           <button type="submit">Send Message</button>
         </form>

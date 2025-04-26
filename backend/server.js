@@ -34,10 +34,11 @@ app.listen(port, () => console.log(`Node server started at port ${port}`));
 
 // Import Routes
 const userRoutes = require("./routes/userRoutes");
+const contactRoutes = require("./routes/contactRoute");
 
 
 app.use("/user",userRoutes);
-
+app.use("/contact",contactRoutes);
 
 
 
