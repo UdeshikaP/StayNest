@@ -39,8 +39,7 @@
 
 .feature-card {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
+     border-radius: 15px;
     text-align: center;
     width: 280px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -222,7 +221,7 @@ button.check-availability:hover {
 
 .image-container {
     position: relative;
-    background: url('../../images/booking-form.jpg') center center/cover no-repeat;
+    background: url('../../images/home1.jpg') center center/cover no-repeat;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -396,7 +395,7 @@ button.check-availability:hover {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    padding: 20px;
+    padding: 4px;
     width: 250px;
     transition: transform 0.3s ease;
   }

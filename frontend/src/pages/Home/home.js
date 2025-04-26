@@ -4,45 +4,13 @@ import { Wifi } from 'lucide-react';
 import Rooms from "../../../../frontend/src/images/rooms.jpg"
 import Menu from "../../../../frontend/src/images/dining-service.jpg"
 import Pool from "../../../../frontend/src/images/pool-service.jpg"
-import Wellness from "../../../../frontend/src/images/dining-service2.jpg"
+import Wellness from "../../../../frontend/src/images/wellness.jpg"
 
 
 
 const Home = () => {
   return (
     <>
-      <div class="booking-container">
-        <section class="booking-section" id="booking">
-          <div className="image-container">
-
-          </div>
-          <div class="form-container">
-            <h2>Book Your Stay</h2>
-            <form>
-              <div class="form-group">
-                <label htmlFor="checkin">Check-in Date</label>
-                <input type="date" id="checkin" name="checkin" />
-              </div>
-              <div class="form-group">
-                <label htmlFor="checkout">Check-out Date</label>
-                <input type="date" id="checkout" name="checkout" />
-              </div>
-              <div class="form-group">
-                <label htmlFor="guests">Number of Guests</label>
-                <input type="number" id="guests" name="guests" min="1" />
-              </div>
-              <button type="submit" class="check-availability">
-                Check Availability
-              </button>
-            </form>
-
-          </div>
-
-        </section>
-      </div>
-
-
-
       <div className="services">
         <div className="service-item">
           <div className="icon-circle">
@@ -53,7 +21,7 @@ const Home = () => {
         </div>
         <div className="service-item">
           <div className="icon-circle"></div>
-              <img src={Rooms || "/placeholder.svg"} alt="Delicious food" />
+          <img src={Rooms || "/placeholder.svg"} alt="Delicious food" />
           <p>Room Service</p>
         </div>
         <div className="service-item">
@@ -84,22 +52,24 @@ const Home = () => {
               <img src={Rooms || "/placeholder.svg"} alt="Delicious food" />
             </div>
             <h3>Luxury Rooms</h3>
-            <p>Elegantly designed rooms with scenic views and top-class amenities.</p>
+            <p>Elegantly designed rooms with scenic views and top-class.</p>
           </div>
           <div className="feature-box">
-          <div className="img-service">
+            <div className="img-service">
               <img src={Wellness || "/placeholder.svg"} alt="Delicious food" />
-            </div>            <h3>Spa & Wellness</h3>
+            </div>            
+            <h3>Spa & Wellness</h3>
             <p>Rejuvenate your senses with our relaxing spa treatments.</p>
           </div>
           <div className="feature-box">
-          <div className="img-service">
+            <div className="img-service">
               <img src={Menu || "/placeholder.svg"} alt="Delicious food" />
-            </div>            <h3>Fine Dining</h3>
+            </div>            
+            <h3>Fine Dining</h3>
             <p>Savor gourmet meals prepared by award-winning chefs.</p>
           </div>
           <div className="feature-box">
-          <div className="img-service">
+            <div className="img-service">
               <img src={Pool || "/placeholder.svg"} alt="Delicious food" />
             </div>            <h3>Infinity Pool</h3>
             <p>Swim under the stars in our stunning infinity-edge pool.</p>
