@@ -7,7 +7,7 @@
     background-color: #fdfdfd;
   }
   
-  .hero-img{
+  .hero-img-about{
     text-align: center;
     margin-bottom: 50px;
     height: 500px;
@@ -17,7 +17,7 @@
 
   }
 
-  .hero-img h1 {
+  .hero-img-about h1 {
     padding-top: 390px;
     font-size: 3rem;
     color: #fbfbfb;
