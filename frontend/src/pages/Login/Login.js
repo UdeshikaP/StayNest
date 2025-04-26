@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "./Login.css";
 import axios from "axios";  
+import { useNavigate } from "react-router-dom";
 
 
 export default function Login() {
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const navigate = useNavigate();
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -15,6 +17,7 @@ export default function Login() {
       const res = await axios.post("http://localhost:5003/user/login", formData);
       console.log(res.data);
       alert("User Logged In Successfully!");
+      navigate('/');
       // You could store the JWT token here, e.g., in localStorage or state
     } catch (error) {
       console.error(error.response.data);

@@ -25,14 +25,14 @@
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 20px;
-  border: 2px solid #c6c4c4;
+  border: 2px solid #e0e0e0;
   border-radius: 8px;
   transition: all 0.3s;
   font-size: 16px;
 }
 
 .login-container input:focus {
-  border-color: #2e4f4f;
+  border-color: #2c8e7c;
   outline: none;
   background: #f0faff;
 }
@@ -49,8 +49,6 @@
   cursor: pointer;
 }
 
-.login-container button:hover {
-}
 
 @keyframes fadeIn {
   from {
