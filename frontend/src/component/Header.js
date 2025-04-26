@@ -35,12 +35,14 @@ function Header() {
 
   return (
     <nav className="header">
+      <h2>StayNest</h2>
       <ul className="header-links">
+       
         <li><a href="/#booking">Home</a></li>
         <li><Link to="/about-us">About</Link></li>
+        <li><Link to="/#services">services</Link></li>
         <li><Link to="/room-details">Rooms</Link></li>
         <li><Link to="/menu-item">Menus</Link></li>
-        <li><Link to="/events">Events</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <button className="login" onClick={() => setShowBookingForm(true)}>Book Now</button>
       </ul>

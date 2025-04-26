@@ -110,4 +110,7 @@
       opacity: 1;
     }
   }
-  
+   .header-links h2{
+    color:#243d3d;
+    font-family: 'Playfair Display', serif;
+   }

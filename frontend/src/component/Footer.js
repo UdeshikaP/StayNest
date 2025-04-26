@@ -53,9 +53,7 @@ function Footer() {
             <div className="footer-links-column">
               <h3 className="footer-links-title">Services</h3>
               <ul className="footer-links-list">
-                <li>
-                  <Link to="/events">Events</Link>
-                </li>
+                
                 <li>
                   <Link to="/menu-item">Menu</Link>
                 </li>
