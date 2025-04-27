@@ -26,8 +26,10 @@ export default function Login() {
     }
   };
   return (
+    <div class="body">
     <div className="login-container">
       <h2>Welcome Back</h2>
+      <p>Please enter your details to access your account</p>
       <form onSubmit={handleSubmit}>
         <h4>Username : </h4>
         <input
@@ -49,6 +51,7 @@ export default function Login() {
         />
         <button type="submit">Login</button>
       </form>
+    </div>
     </div>
   );
 }

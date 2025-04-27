@@ -1,7 +1,6 @@
 
-
 .login-container {
-  background: #ffffff;
+  background: #c9e8e8;
   padding: 60px;
   border-radius: 15px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -13,6 +12,10 @@
   margin-bottom: 30px;
 }
 
+p{
+  text-align: center;
+  color: #7b7979;
+}
 .login-container h2 {
   text-align: center;
   margin-bottom: 25px;
