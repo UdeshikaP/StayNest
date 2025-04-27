@@ -37,10 +37,17 @@ function Header() {
     <nav className="header">
       <h2>StayNest</h2>
       <ul className="header-links">
-       
+
         <li><a href="/#booking">Home</a></li>
         <li><Link to="/about-us">About</Link></li>
-        <li><Link to="/#services">services</Link></li>
+        <li className="dropdown">
+          <span><Link to="/#services">Services ▾</Link></span>
+          <ul className="dropdown-menu">
+            <li><Link to="/room-details">Room Service</Link></li>
+            <li><Link to="/menu-item">Menu Service</Link></li>
+          </ul>
+        </li>
+
         <li><Link to="/room-details">Rooms</Link></li>
         <li><Link to="/menu-item">Menus</Link></li>
         <li><Link to="/contact">Contact</Link></li>
@@ -48,19 +55,20 @@ function Header() {
       </ul>
 
       <div className="buttons">
-        {isLoggedIn ? (
-          <button className="logout" onClick={handleLogout}>Logout</button>
-        ) : (
-          <>
-            <Link to="/login">
-              <button className="login">Login</button>
-            </Link>
-            <Link to="/signup">
-              <button className="signup">Sign Up</button>
-            </Link>
-          </>
-        )}
-      </div>
+  {localStorage.getItem('token') ? (
+    <button className="signup" onClick={handleLogout}>Logout</button>
+  ) : (
+    <>
+      <Link to="/login">
+        <button className="login">Login</button>
+      </Link>
+      <Link to="/signup">
+        <button className="signup">Sign Up</button>
+      </Link>
+    </>
+  )}
+</div>
+
 
       {/* Booking Form Popup */}
       {showBookingForm && (
