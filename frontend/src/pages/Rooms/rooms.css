@@ -21,6 +21,8 @@
     background: url('../../images/bed1.jpg') center center/cover no-repeat;
     width: 40%;
     padding: 20px;
+    border-radius: 20px;
+
   }
   @keyframes slideInLeftToRight {
     0% {
@@ -42,6 +44,7 @@
     background: url('../../images/bed2.jpg') center center/cover no-repeat;
     width: 40%;
     padding: 20px;
+    border-radius: 20px;
   }
  
   @keyframes slideInRightToLeft {
