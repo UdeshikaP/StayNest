@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 function HeroSection() {
     const location = useLocation();
-    const hiddenPaths = ["/login", "/about-us","/room-details","/signup"]; 
+    const hiddenPaths = ["/login", "/about-us","/room-details","/signup","/menu-item"]; 
     const isHidden = hiddenPaths.includes(location.pathname); 
     return (
         <>
