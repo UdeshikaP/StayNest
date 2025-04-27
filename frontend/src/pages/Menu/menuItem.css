@@ -1,17 +1,70 @@
 .menus-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    font-family: 'Segoe UI', sans-serif;
-    color: #333;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 70px 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fdfdfd;
   }
+ 
+    .hero-container-menu {
+      display: flex;
+      padding: 70px 100px;
+      gap: 30px; /* move gap here */
+    }
+    
+    .hero-menu {
+      flex: 1;
+      text-align: center;
+      height: 300px;
+      animation: slideInLeftToRight 1s ease-in-out;
+      width: 40%;
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+
+    }
   
+    @keyframes slideInLeftToRight {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .hero-img2-menu {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 50px;
+      height: 600px;
+      animation: slideInRightToLeft 1s ease-in-out;
+      background: url('../../images/menu.jpg') center center/cover no-repeat;
+      width: 40%;
+      padding: 20px;
+      border-radius: 20px;
+    }
+   
+    @keyframes slideInRightToLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
   .menus-title {
     font-size: 2.5rem;
     text-align: center;
     color: #2e3a59;
   }
-  
+   
   .menus-subtitle {
     text-align: center;
     color: #6a7b98;
@@ -25,9 +78,9 @@
   
   .menu-category {
     font-size: 2rem;
-    color: #4caf50;
+    color: #243d3d;
     margin-bottom: 20px;
-    border-left: 5px solid #4caf50;
+    border-left: 5px solid #2b5151;
     padding-left: 10px;
   }
   
@@ -60,6 +113,8 @@
   
   .menu-details {
     padding: 15px;
+    text-align: center;
+    color: #2e5050;
   }
   
   .menu-details h3 {
@@ -74,7 +129,7 @@
   }
   
   .price {
-    color: #4caf50;
+    color: #2e5050;
     font-weight: bold;
     font-size: 1rem;
   }
