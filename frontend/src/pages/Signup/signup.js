@@ -24,6 +24,7 @@ export default function Signup() {
     <div className="signup-container">
       <h2>Create Account</h2>
       <form onSubmit={handleSubmit}>
+      <h4>First Name : </h4>
         <input
           type="text"
           name="firstName"
@@ -32,6 +33,7 @@ export default function Signup() {
           onChange={handleChange}
           required
         />
+         <h4>Last Name : </h4>
         <input
           type="text"
           name="lastName"
@@ -40,6 +42,7 @@ export default function Signup() {
           onChange={handleChange}
           required
         />
+         <h4>Email : </h4>
         <input
           type="email"
           name="email"
@@ -48,6 +51,7 @@ export default function Signup() {
           onChange={handleChange}
           required
         />
+         <h4>Password : </h4>
         <input
           type="password"
           name="password"

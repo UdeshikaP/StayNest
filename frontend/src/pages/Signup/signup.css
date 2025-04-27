@@ -1,23 +1,20 @@
 
-
 .signup-container {
   background: #ffffff;
-  padding: 30px 30px;
-  border-radius: 15px;
+   border-radius: 15px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  width: 320px;
+  width: 520px;
   animation: fadeIn 1s ease-in-out;
   margin-top: 100px;
   padding: 60px;
   margin-left:520px;
-  margin-right: 70px;
-  margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .signup-container h2 {
   text-align: center;
   margin-bottom: 25px;
-  color: #333;
+  color: #243d3d;
   font-weight: 600;
 }
 
@@ -32,7 +29,7 @@
 }
 
 .signup-container input:focus {
-  border-color: #2c8e7c;
+  border-color: 1px solid #243d3d;
   outline: none;
   background: #f0faff;
 }
@@ -45,8 +42,9 @@
   color: white;
   font-size: 16px;
   font-weight: 600;
-  background-color: #333;
+  background-color: #243d3d;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 
