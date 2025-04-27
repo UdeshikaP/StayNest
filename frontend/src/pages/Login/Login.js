@@ -16,6 +16,7 @@ export default function Login() {
     try {
       const res = await axios.post("http://localhost:5003/user/login", formData);
       console.log(res.data);
+      localStorage.setItem('token', res.data.token);
       alert("User Logged In Successfully!");
       navigate('/');
       // You could store the JWT token here, e.g., in localStorage or state
@@ -28,6 +29,7 @@ export default function Login() {
     <div className="login-container">
       <h2>Welcome Back</h2>
       <form onSubmit={handleSubmit}>
+        <h4>Username : </h4>
         <input
           type="email"
           name="email"
@@ -36,6 +38,7 @@ export default function Login() {
           onChange={handleChange}
           required
         />
+         <h4>Password : </h4>
         <input
           type="password"
           name="password"
