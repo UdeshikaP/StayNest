@@ -1,13 +1,14 @@
 import React from 'react';
 import './home.css';
-import { Wifi } from 'lucide-react';
+import Wifi from "../../../../frontend/src/images/wifi.png"
+import Room from "../../../../frontend/src/images/bed.png"
+import park from "../../../../frontend/src/images/paek.png"
+import customer from "../../../../frontend/src/images/customer.png"
+import hours from "../../../../frontend/src/images/24.png"
 import Rooms from "../../../../frontend/src/images/rooms.jpg"
 import Menu from "../../../../frontend/src/images/dining-service.jpg"
 import Pool from "../../../../frontend/src/images/pool-service.jpg"
 import Wellness from "../../../../frontend/src/images/wellness.jpg"
-import RoomsService from "../../../../frontend/src/images/room.png"
-import customerService from "../../../../frontend/src/images/customer.png"
-import parkingService from "../../../../frontend/src/images/parking.png"
 
 const Home = () => {
   return (
@@ -15,29 +16,36 @@ const Home = () => {
       <div className="services" id="#services">
         <div className="service-item">
           <div className="icon-circle">
-            <Wifi size={40} color="black" />
+          <img src={Wifi || "/placeholder.svg"} alt="Delicious food" />
+
           </div>
 
           <p>Free Wifi</p>
         </div>
         <div className="service-item">
           <div className="icon-circle">
-          <img src={RoomsService || "/placeholder.svg"} alt="Delicious food" />
+          <img src={Room || "/placeholder.svg"} alt="Delicious food" />
 
           </div>
           <p>Room Service</p>
         </div>
         <div className="service-item">
           <div className="icon-circle">          
-            <img src={parkingService || "/placeholder.svg"} alt="Delicious food" />
+            <img src={park || "/placeholder.svg"} alt="Delicious food" />
           </div>
           <p>Free Parking</p>
         </div>
         <div className="service-item">
           <div className="icon-circle">          
-            <img src={ customerService|| "/placeholder.svg"} alt="Delicious food" />
+            <img src={ customer|| "/placeholder.svg"} alt="Delicious food" />
           </div>
           <p>Customer Support</p>
+        </div>
+        <div className="service-item">
+          <div className="icon-circle">          
+            <img src={ hours|| "/placeholder.svg"} alt="Delicious food" />
+          </div>
+          <p>24 Hours</p>
         </div>
       </div>
 
